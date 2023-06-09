@@ -31,9 +31,9 @@ jobs:
        - name: Publish Build info With JFrog CLI
          run: |
           # Collect environment variables for the build
-          #jf rt build-collect-env
+          jf rt build-collect-env
           # Collect VCS details from git and add them to the build
-          #jf rt build-add-git
+          jf rt build-add-git
           # Publish build info
-          #jf rt build-publish
-          jfrog rt bp JFrog Integration testgithub 19
+          jf rt build-publish
+          #jfrog rt bp JFrog Integration testgithub 19
